@@ -1,7 +1,5 @@
-# CV - Arturo Britez Adaime
+![image](https://github.com/user-attachments/assets/5f7fe666-6be3-4f55-a117-cc786befd99e)
 
-💼 Data Analyst & BI Consultant  
-🔎 5+ años de experiencia | Power BI, SQL, Azure, BigQuery
 
 Este repositorio contiene mi currículum vitae interactivo en HTML, optimizado para visualización web.
 
