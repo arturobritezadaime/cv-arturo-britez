@@ -3,36 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arturo Britez Adaime - Data Analyst & BI Consultant</title>
-    <meta name="description" content="Data Analyst con 5+ años de experiencia en Power BI, SQL, Azure y BigQuery. Especialista en Business Intelligence y soluciones de datos.">
-    <meta name="keywords" content="Data Analyst, Business Intelligence, Power BI, SQL, Azure, BigQuery, BI Consultant">
+    <title>Arturo Britez Adaime — BI Analyst Sr | Business Intelligence & Data Analytics</title>
+    <meta name="description" content="BI Analyst Sr e Ingeniero en Sistemas con casi 7 años de experiencia en Business Intelligence. Especialista en BigQuery, Power BI, Looker Studio, SQL, automatización con Python e IA aplicada.">
+    <meta name="keywords" content="Business Intelligence, BI Analyst Ssr, BI Analyst Sr, Data Analyst, BigQuery, Power BI, Looker Studio, SQL, Python, Google Apps Script, Argentina">
     <meta name="author" content="Arturo Britez Adaime">
-    <meta property="og:title" content="Arturo Britez Adaime - Data Analyst & BI Consultant">
-    <meta property="og:description" content="Data Analyst con 5+ años transformando datos en decisiones estratégicas. Especialista en Power BI y SQL.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2E86AB">
+
+    <meta property="og:title" content="Arturo Britez Adaime — BI Analyst Sr | Business Intelligence & Data Analytics">
+    <meta property="og:description" content="Casi 7 años transformando datos en decisiones estratégicas. BigQuery, Power BI, Looker Studio, SQL y automatización con Python e IA.">
     <meta property="og:type" content="profile">
-    <link rel="canonical" href="#">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:url" content="https://arturobritezadaime.github.io/cv-arturo-britez/">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://arturobritezadaime.github.io/cv-arturo-britez/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Arturo Britez Adaime",
+      "jobTitle": "Business Intelligence Analyst",
+      "email": "mailto:arturo.b.a@gmail.com",
+      "telephone": "+54 379 433-6465",
+      "url": "https://arturobritezadaime.github.io/cv-arturo-britez/",
+      "sameAs": ["https://linkedin.com/in/arturo-britez"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Corrientes",
+        "addressCountry": "AR"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Tecnológica Nacional — Facultad Regional Resistencia"
+      },
+      "knowsLanguage": ["Español", "Inglés (B2)", "Portugués (A1)"],
+      "knowsAbout": ["Business Intelligence", "Google BigQuery", "Power BI", "Looker Studio", "SQL", "Python", "ETL", "Data Visualization"]
+    }
+    </script>
+
     <style>
         @page {
             margin: 0.5in;
             size: A4;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        :root {
+            --primary: #2E86AB;
+            --primary-light: #3A9BC1;
+            --accent: #A23B72;
+            --highlight: #F18F01;
+            --ink: #333;
+            --muted: #666;
+            --surface: #f8f9fa;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.4;
-            color: #333;
+            color: var(--ink);
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             font-size: 11pt;
             min-height: 100vh;
             padding: 20px 0;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -43,7 +85,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .container::before {
             content: '';
             position: absolute;
@@ -51,149 +93,135 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #2E86AB 0%, #A23B72 50%, #F18F01 100%);
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 50%, var(--highlight) 100%);
+            z-index: 2;
         }
 
-        /* Language Toggle */
-        .language-toggle {
+        /* Action bar */
+        .actions {
             position: absolute;
-            top: 20px;
+            top: 22px;
             right: 25px;
             z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            font-family: inherit;
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(15px);
+            border: 2px solid rgba(46, 134, 171, 0.25);
             border-radius: 30px;
-            padding: 10px 15px;
-            display: flex;
+            padding: 9px 16px;
+            display: inline-flex;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid rgba(46, 134, 171, 0.2);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .language-toggle:hover {
-            background: rgba(46, 134, 171, 0.1);
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(46, 134, 171, 0.15);
-            border-color: rgba(46, 134, 171, 0.4);
-        }
-
-        
-
-        .toggle-text {
-            color: #2E86AB;
-            font-size: 11pt;
+            color: var(--primary);
+            font-size: 10pt;
             font-weight: 700;
-            letter-spacing: 0.5px;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            transition: color 0.3s ease;
-        }
-        .language-toggle:hover .toggle-text {
-            color: white;
+            letter-spacing: 0.4px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         }
 
-        .toggle-icon {
-            color: #2E86AB;
-            font-size: 16px;
-            transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
+        .action-btn:hover {
+            transform: translateY(-2px);
+            background: white;
+            box-shadow: 0 8px 22px rgba(46, 134, 171, 0.2);
+            border-color: rgba(46, 134, 171, 0.5);
         }
 
-        .language-toggle:hover .toggle-icon {
-            transform: rotate(180deg);
-            color: #A23B72;
+        .action-btn:focus-visible {
+            outline: 3px solid var(--highlight);
+            outline-offset: 2px;
         }
 
-        /* Animation for flag switching */
-        .flag-container.switching {
-            animation: flagFlip 0.6s ease-in-out;
+        .action-btn .flag {
+            font-size: 14pt;
+            line-height: 1;
+        }
+
+        .action-btn.switching .flag {
+            animation: flagFlip 0.5s ease-in-out;
         }
 
         @keyframes flagFlip {
             0%, 100% { transform: rotateY(0deg); }
             50% { transform: rotateY(90deg); }
         }
-        
+
         /* Header */
         .header {
             text-align: center;
-            margin-bottom: 35px;
-            padding: 20px 0;
-            background: linear-gradient(135deg, #2E86AB 0%, #3A9BC1 100%);
-            margin: -40px -40px 35px -40px;
-            padding: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            margin: -40px -40px 32px -40px;
+            padding: 64px 48px 40px;
             color: white;
             position: relative;
         }
-        
+
         .name {
             font-size: 28pt;
             font-weight: 700;
             color: white;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        
+
         .title {
-            font-size: 14pt;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 15px;
+            font-size: 13.5pt;
+            color: rgba(255,255,255,0.92);
+            margin-bottom: 20px;
             font-weight: 400;
         }
-        
+
         .contact-info {
             font-size: 10pt;
             color: rgba(255,255,255,0.95);
-            line-height: 1.4;
+            line-height: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 6px;
         }
-        
+
         .contact-info a {
             color: white;
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            border-bottom: 1px solid transparent;
+            transition: opacity 0.3s ease, border-color 0.3s ease;
         }
-        
-        .contact-info a:hover {
-            opacity: 0.8;
+
+        .contact-info a.linkedin-link {
+            border-bottom-color: rgba(255,255,255,0.55);
         }
-        
-        /* Section Headers */
-        .section {
-            margin-bottom: 25px;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease forwards;
+
+        .contact-info a:hover { opacity: 0.8; }
+
+        .contact-info .sep {
+            margin: 0 12px;
+            opacity: 0.5;
+            font-size: 8pt;
         }
-        
-        .section:nth-child(2) { animation-delay: 0.1s; }
-        .section:nth-child(3) { animation-delay: 0.2s; }
-        .section:nth-child(4) { animation-delay: 0.3s; }
-        .section:nth-child(5) { animation-delay: 0.4s; }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
+
+        /* Sections */
+        .section { margin-bottom: 26px; }
+
         .section-title {
             font-size: 14pt;
             font-weight: 600;
-            color: #2E86AB;
+            color: var(--primary);
             text-transform: uppercase;
             margin-bottom: 15px;
             padding-bottom: 5px;
             border-bottom: 2px solid #E0E0E0;
             position: relative;
+            letter-spacing: 0.5px;
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -201,458 +229,629 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background: linear-gradient(90deg, #2E86AB, #A23B72);
+            background: linear-gradient(90deg, var(--primary), var(--accent));
         }
-        
-        /* Profile */
+
         .profile-text {
             font-size: 10pt;
-            line-height: 1.5;
+            line-height: 1.6;
             text-align: justify;
         }
-        
+
         /* Experience */
         .job {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             padding: 20px;
-            background: #f8f9fa;
+            background: var(--surface);
             border-radius: 8px;
-            border-left: 4px solid #2E86AB;
+            border-left: 4px solid var(--primary);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            page-break-inside: avoid;
         }
-        
+
+        .job.current { border-left-color: var(--highlight); }
+
         .job:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(46, 134, 171, 0.1);
+            box-shadow: 0 5px 15px rgba(46, 134, 171, 0.12);
         }
-        
+
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 5px;
+            gap: 12px;
+            margin-bottom: 4px;
         }
-        
+
         .job-title {
             font-weight: 600;
             font-size: 12pt;
-            color: #2E86AB;
+            color: var(--primary);
         }
-        
+
         .job-company {
             font-weight: 500;
-            color: #333;
+            color: var(--ink);
             font-size: 11pt;
         }
-        
+
         .job-date {
             font-size: 9pt;
-            color: #666;
+            color: var(--muted);
             font-style: italic;
+            white-space: nowrap;
         }
-        
+
         .job-location {
             font-size: 9pt;
-            color: #666;
-            margin-bottom: 5px;
+            color: var(--muted);
+            margin-bottom: 4px;
         }
-        
-        .job-description ul {
-            margin-left: 15px;
-            margin-top: 5px;
-        }
-        
-        .job-description li {
-            margin-bottom: 3px;
-            font-size: 9.5pt;
-            line-height: 1.3;
-        }
-        
-        .technologies {
-            margin-top: 8px;
-            padding: 8px 12px;
-            background: linear-gradient(135deg, #2E86AB, #3A9BC1);
+
+        .badge {
+            display: inline-block;
+            background: var(--highlight);
             color: white;
-            font-size: 9pt;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .job-description ul {
+            margin-left: 16px;
+            margin-top: 6px;
+        }
+
+        .job-description li {
+            margin-bottom: 4px;
+            font-size: 9.5pt;
+            line-height: 1.45;
+        }
+
+        .technologies {
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            font-size: 8.5pt;
             font-weight: 500;
             border-radius: 20px;
             display: inline-block;
+            line-height: 1.5;
         }
-        
+
         /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 16px;
         }
-        
+
         .skill-category {
-            margin-bottom: 15px;
             padding: 15px;
-            background: #f8f9fa;
+            background: var(--surface);
             border-radius: 8px;
-            border-top: 3px solid #2E86AB;
+            border-top: 3px solid var(--primary);
         }
-        
+
+        .skill-category.ai { border-top-color: var(--accent); }
+
         .skill-category-title {
             font-weight: 600;
-            color: #2E86AB;
+            color: var(--primary);
             font-size: 10pt;
             margin-bottom: 5px;
         }
-        
+
+        .skill-category.ai .skill-category-title { color: var(--accent); }
+
         .skill-list {
             font-size: 9pt;
-            line-height: 1.4;
+            line-height: 1.5;
         }
-        
+
         /* Education */
-        .education-item {
-            margin-bottom: 10px;
-        }
-        
+        .education-item { margin-bottom: 12px; }
+
         .degree {
             font-weight: bold;
             font-size: 10pt;
         }
-        
+
         .institution {
-            color: #2E86AB;
+            color: var(--primary);
             font-size: 9.5pt;
         }
-        
-        /* Languages */
+
+        .item-note {
+            font-size: 9pt;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+
         .language-item {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 3px;
+            margin-bottom: 5px;
             font-size: 9.5pt;
+            border-bottom: 1px dotted #ddd;
+            padding-bottom: 4px;
         }
-        
+
         /* Certifications */
         .cert-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            gap: 10px 24px;
         }
-        
+
         .cert-item {
             font-size: 9pt;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
-        
-        .cert-completed {
-            color: #28a745;
-        }
-        
-        .cert-progress {
-            color: #2E86AB;
-        }
-        
-        /* Achievements */
+
+        .cert-completed { color: #28a745; }
+        .cert-progress { color: var(--highlight); font-weight: 600; }
+
         .achievement-item {
             font-size: 9.5pt;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
-        
+
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
 
-        /* Language content visibility */
+        /* Footer */
+        .footer-quote {
+            margin-top: 30px;
+            padding-top: 18px;
+            border-top: 2px solid #E0E0E0;
+            text-align: center;
+            font-style: italic;
+            font-size: 9.5pt;
+            color: var(--muted);
+        }
+
+        .updated {
+            margin-top: 10px;
+            font-style: normal;
+            font-size: 8.5pt;
+            color: #999;
+        }
+
+        /* Language visibility */
         .lang-es { display: block; }
         .lang-en { display: none; }
-        
         .english .lang-es { display: none; }
         .english .lang-en { display: block; }
-        
+
+        /* Inline variants: keep the same show/hide logic, but as inline elements */
+        span.lang-es { display: inline; }
+        span.lang-en { display: none; }
+        .english span.lang-es { display: none; }
+        .english span.lang-en { display: inline; }
+
+        span.badge.lang-es { display: inline-block; }
+        .english span.badge.lang-en { display: inline-block; }
+
         @media (max-width: 768px) {
+            body { padding: 0; font-size: 11pt; }
+
             .container {
-                margin: 10px;
+                margin: 0;
                 padding: 20px;
-                border-radius: 8px;
+                border-radius: 0;
             }
-            
+
             .header {
-                margin: -20px -20px 25px -20px;
-                padding: 25px 20px;
+                margin: -20px -20px 24px -20px;
+                padding: 68px 20px 26px;
             }
 
-            .language-toggle {
-                top: 15px;
-                right: 15px;
-                padding: 8px 12px;
-                gap: 8px;
+            .actions {
+                top: 14px;
+                right: 14px;
+                left: 14px;
+                justify-content: flex-end;
             }
 
-            .flag-container {
-                width: 28px;
-                height: 20px;
-            }
+            .action-btn { padding: 7px 12px; font-size: 9.5pt; }
 
-            .toggle-text {
-                font-size: 10pt;
-                transition: color 0.3s ease;
-            }
-            
-            .name {
-                font-size: 22pt;
-            }
-            
-            .title {
-                font-size: 12pt;
-            }
-            
+            .name { font-size: 20pt; }
+            .title { font-size: 11.5pt; }
+
+            .contact-info .sep { margin: 0 8px; }
+
             .skills-grid,
             .two-column,
             .cert-grid {
                 grid-template-columns: 1fr;
-                gap: 15px;
+                gap: 14px;
             }
-            
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
+
+            .job-header { flex-direction: column; align-items: flex-start; }
+            .job-date { margin-top: 4px; }
+            .profile-text { text-align: left; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; font-size: 10pt; }
+            .container { box-shadow: none; max-width: 100%; padding: 0 18px; border-radius: 0; }
+            .actions { display: none !important; }
+            .header { margin: 0 -18px 20px; padding: 24px; }
+            .job { break-inside: avoid; box-shadow: none; }
+            .job:hover { transform: none; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; transition: none !important; }
+        }
+
+        /* Accessibility: skip link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            background: var(--ink);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 0 0 8px 0;
+            z-index: 2000;
+            font-size: 10pt;
+        }
+
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--highlight);
+            outline-offset: 2px;
+        }
+
+        /* Scroll reveal (JS-driven, respects reduced motion) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
             }
-            
-            .job-date {
-                margin-top: 5px;
+        }
+
+        @media print {
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
             }
         }
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main">Ir al contenido principal / Skip to main content</a>
     <div class="container">
-        <!-- Language Toggle -->
-        <div class="language-toggle" onclick="toggleLanguage()">
-            <div class="flag-container flag-es lang-es" id="flagContainer"></div>
-            <div class="flag-container flag-us lang-en" id="flagContainer"></div>
-            <span class="toggle-text lang-es">ESP</span>
-            <span class="toggle-text lang-en">ENG</span>
-            <div class="toggle-icon">🔄</div>
+        <!-- Actions -->
+        <div class="actions">
+            <button class="action-btn" id="langBtn" type="button" onclick="toggleLanguage()" aria-label="Cambiar idioma / Switch language" aria-pressed="false">
+                <span class="flag" aria-hidden="true">🌐</span>
+                <span class="lang-es">English</span>
+                <span class="lang-en">Español</span>
+            </button>
+            <button class="action-btn" type="button" onclick="window.print()" aria-label="Descargar en PDF / Download as PDF">
+                <span aria-hidden="true">⬇</span> PDF
+            </button>
         </div>
 
         <!-- Header -->
-        <div class="header">
-            <div class="name">ARTURO BRITEZ ADAIME</div>
-            <div class="title lang-es">Data Analyst | Business Intelligence Consultant</div>
-            <div class="title lang-en">Data Analyst | Business Intelligence Consultant</div>
+        <header class="header">
+            <h1 class="name">ARTURO BRITEZ ADAIME</h1>
+            <p class="title lang-es">Ingeniero en Sistemas · Business Intelligence &amp; Data Analytics</p>
+            <p class="title lang-en">Systems Engineer · Business Intelligence &amp; Data Analytics</p>
             <div class="contact-info">
-                <a href="https://linkedin.com/in/arturo-britez">linkedin.com/in/arturo-britez</a> | 
-                <a href="mailto:arturo.b.a@gmail.com">arturo.b.a@gmail.com</a> | 
-                +54 379 433-6465 | 
-                <span class="lang-es">Corrientes, Argentina</span>
-                <span class="lang-en">Corrientes, Argentina</span>
+                <a class="linkedin-link" href="https://linkedin.com/in/arturo-britez" target="_blank" rel="noopener">linkedin.com/in/arturo-britez</a><span class="sep" aria-hidden="true">•</span><a href="mailto:arturo.b.a@gmail.com">arturo.b.a@gmail.com</a><span class="sep" aria-hidden="true">•</span><a href="tel:+543794336465">+54 379 433-6465</a><span class="sep" aria-hidden="true">•</span><span class="lang-es">Corrientes, Argentina · Disponible para trabajo remoto</span><span class="lang-en">Corrientes, Argentina · Open to remote work</span>
             </div>
-        </div>
+        </header>
 
-        <!-- Professional Profile -->
-        <div class="section">
-            <div class="section-title lang-es">Perfil Profesional</div>
-            <div class="section-title lang-en">Professional Profile</div>
-            <div class="profile-text lang-es">
-                Data Analyst con 5+ años transformando datos en decisiones estratégicas de alto impacto. Especialista en Power BI y SQL con experiencia avanzada en Azure, BigQuery y soluciones cloud. Historial comprobado desarrollando dashboards y automatizaciones que optimizan procesos empresariales en sectores construcción, logística, energía y retail. Enfoque en traducir requerimientos complejos en soluciones visuales que impulsan el crecimiento del negocio.
-            </div>
-            <div class="profile-text lang-en">
-                Data Analyst with 5+ years transforming data into high-impact strategic decisions. Power BI and SQL specialist with advanced experience in Azure, BigQuery, and cloud solutions. Proven track record developing dashboards and automations that optimize business processes across construction, logistics, energy, and retail sectors. Focused on translating complex requirements into visual solutions that drive business growth.
-            </div>
-        </div>
+        <main id="main">
+        <!-- Profile -->
+        <section class="section">
+            <h2 class="section-title lang-es">Perfil Profesional</h2>
+            <h2 class="section-title lang-en">Professional Profile</h2>
+            <p class="profile-text lang-es">
+                Ingeniero en Sistemas de Información con casi 7 años de experiencia en Business Intelligence, transformando datos en decisiones estratégicas que impulsan el negocio. Trabajo con SQL sobre BigQuery, SQL Server, Oracle y SAP HANA, y construyo tableros ejecutivos en Power BI y Looker Studio para áreas de Finanzas, Payments, Order Flow y Operaciones. Automatizo procesos y reportes recurrentes con Python, notebooks y Google Apps Script, e integro herramientas de IA (Claude, Gemini) en el flujo de trabajo diario para acelerar el análisis exploratorio y la documentación técnica.
+            </p>
+            <p class="profile-text lang-en">
+                Information Systems Engineer with almost 7 years of experience in Business Intelligence, turning data into strategic decisions that drive the business. I work with SQL across BigQuery, SQL Server, Oracle, and SAP HANA, and build executive dashboards in Power BI and Looker Studio for Finance, Payments, Order Flow, and Operations teams. I automate recurring processes and reports with Python, notebooks, and Google Apps Script, and I integrate AI tools (Claude, Gemini) into my daily workflow to speed up exploratory analysis and technical documentation.
+            </p>
+        </section>
 
-        <!-- Professional Experience -->
-        <div class="section">
-            <div class="section-title lang-es">Experiencia Profesional</div>
-            <div class="section-title lang-en">Professional Experience</div>
-            
-            <div class="job">
+        <!-- Experience -->
+        <section class="section">
+            <h2 class="section-title lang-es">Experiencia Profesional</h2>
+            <h2 class="section-title lang-en">Professional Experience</h2>
+
+            <article class="job current">
                 <div class="job-header">
                     <div>
-                        <div class="job-title lang-es">BI Consultant / Data Analyst (Freelance)</div>
-                        <div class="job-title lang-en">BI Consultant / Data Analyst (Freelance)</div>
+                        <div class="job-title lang-es">Consultor de Automatización y Datos (Freelance)<span class="badge lang-es">Actual</span></div>
+                        <div class="job-title lang-en">Data &amp; Automation Consultant (Freelance)<span class="badge lang-en">Current</span></div>
                         <div class="job-company lang-es">Trabajo Independiente</div>
                         <div class="job-company lang-en">Independent Work</div>
                     </div>
-                    <div class="job-date lang-es">Sep. 2024 - Actualidad</div>
-                    <div class="job-date lang-en">Sep. 2024 - Present</div>
+                    <div class="job-date lang-es">Ago. 2026 – Presente</div>
+                    <div class="job-date lang-en">Aug. 2026 – Present</div>
                 </div>
-                <div class="job-location lang-es">Modalidad Remota</div>
+                <div class="job-location lang-es">Remoto</div>
                 <div class="job-location lang-en">Remote</div>
                 <div class="job-description">
                     <ul class="lang-es">
-                        <li>Desarrollo de soluciones BI end-to-end para +8 empresas en sectores construcción, logística, energía y retail</li>
-                        <li>Implementación de 15+ dashboards interactivos y automatización de reportes que redujeron tiempo de análisis en 60%</li>
-                        <li>Optimización de procesos ETL y migración de datos legacy a arquitecturas cloud modernas</li>
-                        <li>Aplicación de mejores prácticas UX en visualización de datos para maximizar adopción usuario final</li>
+                        <li>Automatización de tareas, análisis de datos y elaboración de reportes en Google BigQuery y Looker Studio para clientes de distintos sectores.</li>
+                        <li>Desarrollo de scripts con Google Apps Script para integrar y optimizar flujos de trabajo entre Google Sheets, Gmail y Calendar.</li>
+                        <li>Uso de Python y Claude Pro (IA) para acelerar el análisis exploratorio, la documentación técnica y la generación de reportes.</li>
                     </ul>
                     <ul class="lang-en">
-                        <li>Development of end-to-end BI solutions for 8+ companies across construction, logistics, energy, and retail sectors</li>
-                        <li>Implementation of 15+ interactive dashboards and report automation reducing analysis time by 60%</li>
-                        <li>ETL process optimization and migration of legacy data to modern cloud architectures</li>
-                        <li>Application of UX best practices in data visualization to maximize end-user adoption</li>
+                        <li>Automating tasks, analyzing data, and building reports in Google BigQuery and Looker Studio for clients across various industries.</li>
+                        <li>Building automation scripts with Google Apps Script to integrate and streamline workflows across Google Sheets, Gmail, and Calendar.</li>
+                        <li>Using Python and Claude Pro (AI) to speed up exploratory data analysis, technical documentation, and report generation.</li>
                     </ul>
-                    <div class="technologies lang-es">Tecnologías: Power BI, SQL Server, Azure, BigQuery, Looker Studio, Python</div>
-                    <div class="technologies lang-en">Technologies: Power BI, SQL Server, Azure, BigQuery, Looker Studio, Python</div>
+                    <div class="technologies lang-es">Tecnologías: Google BigQuery · Looker Studio · Google Apps Script · Python · Claude Pro (IA)</div>
+                    <div class="technologies lang-en">Technologies: Google BigQuery · Looker Studio · Google Apps Script · Python · Claude Pro (AI)</div>
                 </div>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Business Intelligence Analyst</div>
+                        <div class="job-company">Infracommerce</div>
+                    </div>
+                    <div class="job-date lang-es">Sep. 2025 – Jul. 2026</div>
+                    <div class="job-date lang-en">Sep. 2025 – Jul. 2026</div>
+                </div>
+                <div class="job-description">
+                    <ul class="lang-es">
+                        <li>Soluciones de BI cross-marca y multi-país para Finanzas, Order Flow y Payments, con marcas como Nike, Under Armour, Hugo Boss, Swarovski y American Eagle.</li>
+                        <li>Desarrollo del tablero de conciliación Facturante + WMS: comparación del stock teórico entre el sistema de almacén y el de facturación para identificar quiebres y diferencias de inventario a nivel SKU.</li>
+                        <li>Contribución al tablero regional de Finanzas (ingresos, órdenes y comisiones por marca y país) y optimización de consultas SQL en BigQuery para reducir el consumo de recursos en reportes multi-país.</li>
+                        <li>Automatización de la extracción de datos desde APIs con Python y notebooks, agilizando procesos de reporting recurrentes.</li>
+                        <li>Uso de Gemini Pro (IA) como apoyo en el análisis de datos y el desarrollo de automatizaciones.</li>
+                    </ul>
+                    <ul class="lang-en">
+                        <li>Cross-brand, multi-country BI solutions for Finance, Order Flow, and Payments, working with brands such as Nike, Under Armour, Hugo Boss, Swarovski, and American Eagle.</li>
+                        <li>Built the Invoicing + WMS reconciliation dashboard: comparing theoretical stock between the warehouse management system and the invoicing system to identify breakages and inventory differences at SKU level.</li>
+                        <li>Contributed to the regional Finance dashboard (revenue, orders, and commissions by brand and country) and optimized BigQuery SQL queries to reduce resource consumption in multi-country reports.</li>
+                        <li>Automated data extraction from APIs using Python and notebooks, streamlining recurring reporting workflows.</li>
+                        <li>Leveraged Gemini Pro (AI) to support data analysis and automation development.</li>
+                    </ul>
+                    <div class="technologies lang-es">Tecnologías: Google BigQuery · Power BI · Python · Jupyter Notebooks · APIs · Gemini Pro (IA)</div>
+                    <div class="technologies lang-en">Technologies: Google BigQuery · Power BI · Python · Jupyter Notebooks · APIs · Gemini Pro (AI)</div>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">BI Consultant / Data Analyst (Freelance)</div>
+                        <div class="job-company lang-es">Trabajo Independiente</div>
+                        <div class="job-company lang-en">Independent Work</div>
+                    </div>
+                    <div class="job-date lang-es">Sep. 2024 – Ago. 2025</div>
+                    <div class="job-date lang-en">Sep. 2024 – Aug. 2025</div>
+                </div>
+                <div class="job-location lang-es">Remoto</div>
+                <div class="job-location lang-en">Remote</div>
+                <div class="job-description">
+                    <ul class="lang-es">
+                        <li>Soluciones de BI end-to-end para más de 8 empresas de los sectores construcción, logística, energía y retail.</li>
+                        <li>Implementación de más de 10 tableros interactivos y automatización de reportes, reduciendo el tiempo de análisis en un 60%.</li>
+                        <li>Optimización de procesos ETL y migración de datos legacy a arquitecturas cloud modernas.</li>
+                        <li>Aplicación de buenas prácticas de UX en visualización de datos para maximizar la adopción por parte de los usuarios finales.</li>
+                    </ul>
+                    <ul class="lang-en">
+                        <li>End-to-end BI solutions for 8+ companies across construction, logistics, energy, and retail sectors.</li>
+                        <li>Implemented 10+ interactive dashboards and automated reporting, reducing analysis time by 60%.</li>
+                        <li>Optimized ETL processes and migrated legacy data to modern cloud architectures.</li>
+                        <li>Applied UX best practices in data visualization to maximize end-user adoption.</li>
+                    </ul>
+                    <div class="technologies lang-es">Tecnologías: Power BI · Looker Studio · SQL Server · BigQuery · Python · ETL</div>
+                    <div class="technologies lang-en">Technologies: Power BI · Looker Studio · SQL Server · BigQuery · Python · ETL</div>
+                </div>
+            </article>
+
+            <article class="job">
                 <div class="job-header">
                     <div>
                         <div class="job-title">Business Intelligence Consultant</div>
                         <div class="job-company">Practia Global</div>
                     </div>
-                    <div class="job-date lang-es">May. 2022 - Ago. 2024</div>
-                    <div class="job-date lang-en">May 2022 - Aug. 2024</div>
+                    <div class="job-date lang-es">May. 2022 – Ago. 2024</div>
+                    <div class="job-date lang-en">May 2022 – Aug. 2024</div>
                 </div>
                 <div class="job-description">
                     <ul class="lang-es">
-                        <li>Optimización de consultas SQL complejas en Oracle, Teradata y SAP HANA mejorando performance en 45%</li>
-                        <li>Desarrollo de 20+ dashboards analíticos estratégicos para C-level executives</li>
-                        <li>Implementación de automatizaciones con Power Automate reduciendo tareas manuales en 70%</li>
-                        <li>Liderazgo técnico en proyectos de migración de datos y modernización de arquitectura BI</li>
+                        <li>Optimización de consultas complejas sobre Oracle, Teradata y SAP HANA para reducir tiempos de respuesta de reportes.</li>
+                        <li>Soporte y mejora de tableros existentes para una empresa del sector petrolero.</li>
+                        <li>Análisis y desarrollo de nuevos tableros para usuarios clave (gerentes y directivos).</li>
+                        <li>Automatización con Power Automate de la descarga mensual de reportes por región: MVP en una semana, validado con usuarios y desplegado a todas las regiones.</li>
                     </ul>
                     <ul class="lang-en">
-                        <li>Optimization of complex SQL queries in Oracle, Teradata, and SAP HANA improving performance by 45%</li>
-                        <li>Development of 20+ strategic analytical dashboards for C-level executives</li>
-                        <li>Implementation of Power Automate automations reducing manual tasks by 70%</li>
-                        <li>Technical leadership in data migration projects and BI architecture modernization</li>
+                        <li>Optimized complex queries across Oracle, Teradata, and SAP HANA to reduce report response times.</li>
+                        <li>Supported and improved existing dashboards for an oil company.</li>
+                        <li>Analyzed and developed new dashboards for key stakeholders (managers and executives).</li>
+                        <li>Automated the monthly per-region report download with Power Automate: MVP built in one week, validated with users, and rolled out across all regions.</li>
                     </ul>
-                    <div class="technologies lang-es">Tecnologías: Power BI, Power Automate, Power Apps, Azure SQL, Python, Azure DevOps</div>
-                    <div class="technologies lang-en">Technologies: Power BI, Power Automate, Power Apps, Azure SQL, Python, Azure DevOps</div>
+                    <div class="technologies lang-es">Tecnologías: Oracle · Teradata · SAP HANA · Power BI · Power Automate · Power Apps · Azure SQL · Python · Azure DevOps</div>
+                    <div class="technologies lang-en">Technologies: Oracle · Teradata · SAP HANA · Power BI · Power Automate · Power Apps · Azure SQL · Python · Azure DevOps</div>
                 </div>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
                 <div class="job-header">
                     <div>
-                        <div class="job-title lang-es">Ssr. Business Intelligence Analyst</div>
-                        <div class="job-title lang-en">Sr. Business Intelligence Analyst</div>
+                        <div class="job-title lang-es">Ssr. Business Intelligence</div>
+                        <div class="job-title lang-en">Ssr. Business Intelligence</div>
                         <div class="job-company">clicOH Express</div>
                     </div>
-                    <div class="job-date lang-es">Nov. 2021 - Abr. 2022</div>
-                    <div class="job-date lang-en">Nov. 2021 - Apr. 2022</div>
+                    <div class="job-date lang-es">Nov. 2021 – Abr. 2022</div>
+                    <div class="job-date lang-en">Nov. 2021 – Apr. 2022</div>
                 </div>
                 <div class="job-description">
                     <ul class="lang-es">
-                        <li>Diseño e implementación de tableros operativos que optimizaron asignación de recursos en 30%</li>
-                        <li>Identificación y resolución de cuellos de botella en pipelines de datos críticos</li>
-                        <li>Desarrollo de APIs RESTful para integración de sistemas de captura de datos en tiempo real</li>
+                        <li>Optimización de recursos mediante tableros operativos que facilitaron la toma de decisiones en una startup de logística.</li>
+                        <li>Implementación de BigQuery y Looker Studio como solución analítica rápida y de bajo costo para el equipo.</li>
+                        <li>Recomendación de mejoras al sistema existente de captura y procesamiento de información.</li>
                     </ul>
                     <ul class="lang-en">
-                        <li>Design and implementation of operational dashboards that optimized resource allocation by 30%</li>
-                        <li>Identification and resolution of bottlenecks in critical data pipelines</li>
-                        <li>Development of RESTful APIs for real-time data capture system integration</li>
+                        <li>Optimized resources through operational dashboards that supported decision-making at a logistics startup.</li>
+                        <li>Implemented BigQuery and Looker Studio as a fast, low-cost analytics solution for the team.</li>
+                        <li>Recommended improvements to the existing data capture and processing system.</li>
                     </ul>
-                    <div class="technologies lang-es">Tecnologías: MySQL, BigQuery, Looker Studio, Python, Postman, Jira</div>
-                    <div class="technologies lang-en">Technologies: MySQL, BigQuery, Looker Studio, Python, Postman, Jira</div>
+                    <div class="technologies lang-es">Tecnologías: MySQL · Google BigQuery · Looker Studio · Python · Postman · Jira · Sentry</div>
+                    <div class="technologies lang-en">Technologies: MySQL · Google BigQuery · Looker Studio · Python · Postman · Jira · Sentry</div>
                 </div>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
                 <div class="job-header">
                     <div>
-                        <div class="job-title">BI Analyst & App Developer</div>
+                        <div class="job-title lang-es">Analista BI y Desarrollo de Aplicaciones</div>
+                        <div class="job-title lang-en">BI Analyst &amp; Applications Development</div>
                         <div class="job-company">Desarrollos NEA</div>
                     </div>
-                    <div class="job-date lang-es">Sep. 2020 - Nov. 2021</div>
-                    <div class="job-date lang-en">Sep. 2020 - Nov. 2021</div>
+                    <div class="job-date lang-es">Sep. 2020 – Nov. 2021</div>
+                    <div class="job-date lang-en">Sep. 2020 – Nov. 2021</div>
                 </div>
                 <div class="job-description">
                     <ul class="lang-es">
-                        <li>Desarrollo de sistema integral de dashboards (global, por proyecto y equipos) aumentando productividad 25%</li>
-                        <li>Programación de aplicaciones móviles y web con Xamarin y Blazor usando arquitectura .NET Core</li>
-                        <li>Capacitación de 15+ colaboradores técnicos en herramientas BI y mejores prácticas de análisis</li>
+                        <li>Desarrollo de tableros de performance general, por proyecto, por equipo e individual (drill-down) para impulsar el crecimiento de la empresa.</li>
+                        <li>Organización de talleres técnicos y capacitaciones internas en herramientas de BI.</li>
+                        <li>Desarrollo mobile con Xamarin y web con Blazor sobre .NET Core, y APIs en C#.</li>
                     </ul>
                     <ul class="lang-en">
-                        <li>Development of comprehensive dashboard system (global, project, and team level) increasing productivity by 25%</li>
-                        <li>Programming of mobile and web applications with Xamarin and Blazor using .NET Core architecture</li>
-                        <li>Training of 15+ technical collaborators in BI tools and analysis best practices</li>
+                        <li>Built performance dashboards at company, project, team, and individual level (drill-down) to drive company growth.</li>
+                        <li>Organized internal technical workshops and training sessions on BI tools.</li>
+                        <li>Mobile development with Xamarin and web development with Blazor on .NET Core, plus C# APIs.</li>
                     </ul>
-                    <div class="technologies lang-es">Tecnologías: Power BI, SQL Server, Xamarin, Blazor, Visual Studio, Git, C# APIs</div>
-                    <div class="technologies lang-en">Technologies: Power BI, SQL Server, Xamarin, Blazor, Visual Studio, Git, C# APIs</div>
+                    <div class="technologies lang-es">Tecnologías: SQL Server · Power BI · Visual Studio · Git · C# · Xamarin · Blazor · Azure DevOps (Scrum)</div>
+                    <div class="technologies lang-en">Technologies: SQL Server · Power BI · Visual Studio · Git · C# · Xamarin · Blazor · Azure DevOps (Scrum)</div>
                 </div>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
                 <div class="job-header">
                     <div>
                         <div class="job-title">Business Intelligence Analyst</div>
                         <div class="job-company">Lopez Hnos S.A.</div>
                     </div>
-                    <div class="job-date lang-es">Oct. 2019 - Sep. 2020</div>
-                    <div class="job-date lang-en">Oct. 2019 - Sep. 2020</div>
+                    <div class="job-date lang-es">Oct. 2019 – Sep. 2020</div>
+                    <div class="job-date lang-en">Oct. 2019 – Sep. 2020</div>
                 </div>
                 <div class="job-description">
                     <ul class="lang-es">
-                        <li>Construcción de dashboards ejecutivos para monitoreo de ventas, inventario y KPIs de productividad</li>
-                        <li>Implementación de SSRS sobre Dynamics AX para automatización de reportes financieros complejos</li>
-                        <li>Liderazgo de iniciativa de adopción BI interna mediante workshops y documentación técnica</li>
+                        <li>Empresa líder en fabricación y venta de bicicletas en Argentina: tableros de ventas, inventario y KPIs para la toma de decisiones.</li>
+                        <li>Unificación de la moneda de los gastos y actualización diaria de la tabla de cotización (antes semanal), permitiendo comparaciones precisas por categoría y área.</li>
+                        <li>Reportes SSRS sobre Microsoft Dynamics AX 2012 para automatizar la información financiera.</li>
+                        <li>Organización de talleres técnicos y capacitaciones para empleados de la empresa.</li>
                     </ul>
                     <ul class="lang-en">
-                        <li>Construction of executive dashboards for sales monitoring, inventory, and productivity KPIs</li>
-                        <li>Implementation of SSRS on Dynamics AX for complex financial report automation</li>
-                        <li>Leadership of internal BI adoption initiative through workshops and technical documentation</li>
+                        <li>Leading bicycle manufacturer and retailer in Argentina: sales, inventory, and KPI dashboards to support decision-making.</li>
+                        <li>Standardized expense currency and moved the exchange-rate table from weekly to daily updates, enabling accurate comparisons by category and area.</li>
+                        <li>SSRS reports on Microsoft Dynamics AX 2012 to automate financial reporting.</li>
+                        <li>Organized technical workshops and training sessions for company employees.</li>
                     </ul>
-                    <div class="technologies lang-es">Tecnologías: Power BI, SQL Server, SSRS, Microsoft Dynamics AX, Microsoft Planner</div>
-                    <div class="technologies lang-en">Technologies: Power BI, SQL Server, SSRS, Microsoft Dynamics AX, Microsoft Planner</div>
+                    <div class="technologies lang-es">Tecnologías: SQL Server · Power BI · SSRS · Microsoft Dynamics AX 2012 · Microsoft Planner</div>
+                    <div class="technologies lang-en">Technologies: SQL Server · Power BI · SSRS · Microsoft Dynamics AX 2012 · Microsoft Planner</div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
         <!-- Skills -->
-        <div class="section">
-            <div class="section-title lang-es">Habilidades Técnicas</div>
-            <div class="section-title lang-en">Technical Skills</div>
+        <section class="section">
+            <h2 class="section-title lang-es">Habilidades Técnicas</h2>
+            <h2 class="section-title lang-en">Technical Skills</h2>
             <div class="skills-grid">
-                <div>
-                    <div class="skill-category">
-                        <div class="skill-category-title">Business Intelligence & Analytics</div>
-                        <div class="skill-list">Power BI • Looker Studio • SSRS • Tableau • Data Visualization • ETL Processes</div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-category-title lang-es">Bases de Datos & Big Data</div>
-                        <div class="skill-category-title lang-en">Databases & Big Data</div>
-                        <div class="skill-list">SQL Server • MySQL • Oracle • BigQuery • Teradata • SAP HANA • Azure SQL</div>
-                    </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Business Intelligence &amp; Analytics</div>
+                    <div class="skill-list lang-es">Power BI (DAX, modelado) • Looker Studio • SSRS • Diseño de tableros ejecutivos • UX de datos • Storytelling</div>
+                    <div class="skill-list lang-en">Power BI (DAX, data modeling) • Looker Studio • SSRS • Executive dashboard design • Data UX • Storytelling</div>
                 </div>
-                <div>
-                    <div class="skill-category">
-                        <div class="skill-category-title">Cloud & DevOps</div>
-                        <div class="skill-list">Microsoft Azure • Power Platform • Azure DevOps • Git • GitHub</div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-category-title lang-es">Programación & Desarrollo</div>
-                        <div class="skill-category-title lang-en">Programming & Development</div>
-                        <div class="skill-list">Python • SQL • C# • .NET Core • Xamarin • Blazor • REST APIs</div>
-                    </div>
+                <div class="skill-category">
+                    <div class="skill-category-title lang-es">Bases de Datos &amp; Cloud</div>
+                    <div class="skill-category-title lang-en">Databases &amp; Cloud</div>
+                    <div class="skill-list">Google BigQuery • SQL Server • Oracle • Teradata • SAP HANA • MySQL • Azure SQL</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title lang-es">Automatización &amp; Programación</div>
+                    <div class="skill-category-title lang-en">Automation &amp; Programming</div>
+                    <div class="skill-list lang-es">Python • Jupyter Notebooks • Google Apps Script • Power Automate • Power Apps • APIs REST • ETL • C# / .NET</div>
+                    <div class="skill-list lang-en">Python • Jupyter Notebooks • Google Apps Script • Power Automate • Power Apps • REST APIs • ETL • C# / .NET</div>
+                </div>
+                <div class="skill-category ai">
+                    <div class="skill-category-title lang-es">IA Aplicada al Trabajo Diario</div>
+                    <div class="skill-category-title lang-en">AI in Daily Workflow</div>
+                    <div class="skill-list lang-es">Claude Pro • Gemini Pro • Prompt engineering para EDA, optimización de código y documentación técnica</div>
+                    <div class="skill-list lang-en">Claude Pro • Gemini Pro • Prompt engineering for EDA, code optimization, and technical documentation</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title lang-es">Colaboración &amp; Metodologías</div>
+                    <div class="skill-category-title lang-en">Collaboration &amp; Methodologies</div>
+                    <div class="skill-list lang-es">Git / GitHub • Azure DevOps • Jira • Scrum / Ágil • Relevamiento con áreas de negocio</div>
+                    <div class="skill-list lang-en">Git / GitHub • Azure DevOps • Jira • Scrum / Agile • Business requirements gathering</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title lang-es">Dominios de Negocio</div>
+                    <div class="skill-category-title lang-en">Business Domains</div>
+                    <div class="skill-list lang-es">Finanzas • Payments • Order Flow • Operaciones y logística • Retail / e-commerce • Energía • Construcción</div>
+                    <div class="skill-list lang-en">Finance • Payments • Order Flow • Operations &amp; logistics • Retail / e-commerce • Energy • Construction</div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Two Column Section -->
+        <!-- Education + Languages -->
         <div class="two-column">
-            <!-- Education -->
-            <div class="section">
-                <div class="section-title lang-es">Educación</div>
-                <div class="section-title lang-en">Education</div>
+            <section class="section">
+                <h2 class="section-title lang-es">Educación</h2>
+                <h2 class="section-title lang-en">Education</h2>
                 <div class="education-item">
                     <div class="degree lang-es">Ingeniería en Sistemas de Información</div>
                     <div class="degree lang-en">Information Systems Engineering</div>
-                    <div class="institution">Universidad Tecnológica Nacional - FRRE</div>
+                    <div class="institution">Universidad Tecnológica Nacional — FRRE</div>
+                    <div class="item-note lang-es">Carrera finalizada</div>
+                    <div class="item-note lang-en">Completed</div>
                 </div>
                 <div class="education-item">
-                    <div class="degree">Intensive English Program (B2)</div>
+                    <div class="degree lang-es">Programa Intensivo de Inglés (B2)</div>
+                    <div class="degree lang-en">Intensive English Program (B2)</div>
                     <div class="institution">EF International Language Campus, San Diego, USA</div>
-                    <div style="font-size: 9pt; color: #666; margin-top: 2px;" class="lang-es">Ago. 2024 - Sep. 2024</div>
-                    <div style="font-size: 9pt; color: #666; margin-top: 2px;" class="lang-en">Aug. 2024 - Sep. 2024</div>
+                    <div class="item-note lang-es">Ago. 2024 – Sep. 2024</div>
+                    <div class="item-note lang-en">Aug. 2024 – Sep. 2024</div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Languages -->
-            <div class="section">
-                <div class="section-title lang-es">Idiomas</div>
-               <div class="section-title lang-en">Languages</div>
+            <section class="section">
+                <h2 class="section-title lang-es">Idiomas</h2>
+                <h2 class="section-title lang-en">Languages</h2>
                 <div class="language-item">
                     <span class="degree lang-es">Español</span>
                     <span class="degree lang-en">Spanish</span>
@@ -664,104 +863,125 @@
                     <span class="degree lang-en">English</span>
                     <span>B2</span>
                 </div>
-            </div>
+                <div class="language-item">
+                    <span class="degree lang-es">Portugués</span>
+                    <span class="degree lang-en">Portuguese</span>
+                    <span>A1</span>
+                </div>
+            </section>
         </div>
 
-        <div class="section">
-    <div class="section-title lang-es">Certificaciones</div>
-    <div class="section-title lang-en">Certifications</div>
-     <div class="cert-grid">
+        <!-- Certifications -->
+        <section class="section">
+            <h2 class="section-title lang-es">Certificaciones</h2>
+            <h2 class="section-title lang-en">Certifications</h2>
+            <div class="cert-grid">
                 <div>
-                    <div class="cert-item cert-completed">✓ Business Intelligence con Power BI y SQL Server</div>
-                    <div class="cert-item cert-completed">✓ Python para Data Analytics (2023)</div>
-                    <div class="cert-item cert-completed">✓ Data Analytics - CoderHouse</div>
-                    <div class="cert-item cert-completed">✓ BigQuery • MySQL • Looker Studio</div>
+                    <div class="cert-item cert-progress lang-es">⏳ Azure Fundamentals AZ-900 — en curso</div>
+                    <div class="cert-item cert-progress lang-en">⏳ Azure Fundamentals AZ-900 — in progress</div>
+                    <div class="cert-item cert-progress lang-es">⏳ Snowflake — en curso</div>
+                    <div class="cert-item cert-progress lang-en">⏳ Snowflake — in progress</div>
+                    <div class="cert-item cert-completed">✓ Data Engineer — CoderHouse (2023)</div>
+                    <div class="cert-item cert-completed">✓ Data Analytics — CoderHouse (2022)</div>
+                    <div class="cert-item cert-completed lang-es">✓ Business Intelligence con Power BI y SQL Server 2019</div>
+                    <div class="cert-item cert-completed lang-en">✓ Business Intelligence with Power BI and SQL Server 2019</div>
                 </div>
                 <div>
-                    <div class="cert-item cert-progress">⏳ Azure Fundamentals (AZ-900)</div>
-                    <div class="cert-item cert-completed">✓ Git & GitHub</div>
-                    <div class="cert-item cert-completed">✓ React Basic • Xamarin</div>
-                    <div class="cert-item cert-completed">✓ ASP.NET Core + React</div>
+                    <div class="cert-item cert-completed">✓ Python (2023)</div>
+                    <div class="cert-item cert-completed">✓ SQL · MySQL · BigQuery · Looker Studio</div>
+                    <div class="cert-item cert-completed lang-es">✓ Git y GitHub</div>
+                    <div class="cert-item cert-completed lang-en">✓ Git and GitHub</div>
+                    <div class="cert-item cert-completed lang-es">✓ English for the Digital World — Intermedio (2024)</div>
+                    <div class="cert-item cert-completed lang-en">✓ English for the Digital World — Intermediate (2024)</div>
+                    <div class="cert-item cert-completed lang-es">✓ EF International Language — Nivel B2 (2024)</div>
+                    <div class="cert-item cert-completed lang-en">✓ EF International Language — B2 Level (2024)</div>
                 </div>
             </div>
-</div>
+        </section>
 
-<!-- Achievements and Recognition -->
-<div class="section">
-    <div class="section-title lang-es">Logros y Reconocimientos</div>
-    <div class="section-title lang-en">Achievements and Recognition</div>
-    <div>
-<div class="achievement-item lang-es">🏆 1er Puesto - DesafiAR Intecnor</div>
-<div class="achievement-item lang-en">🏆 1st Place - DesafiAR Intecnor</div>
+        <!-- Achievements -->
+        <section class="section">
+            <h2 class="section-title lang-es">Logros y Reconocimientos</h2>
+            <h2 class="section-title lang-en">Achievements and Recognition</h2>
+            <div class="cert-grid">
+                <div>
+                    <div class="achievement-item lang-es">🚀 Co-fundador — startup Nayte (Jul. 2019)</div>
+                    <div class="achievement-item lang-en">🚀 Co-founder — Nayte startup (Jul. 2019)</div>
+                    <div class="achievement-item lang-es">🏆 1er puesto — Entrepreneurship Intecnor</div>
+                    <div class="achievement-item lang-en">🏆 1st Place — Intecnor Entrepreneurship</div>
+                </div>
+                <div>
+                    <div class="achievement-item lang-es">🥈 2do puesto — Rally Latinoamericano de Innovación</div>
+                    <div class="achievement-item lang-en">🥈 2nd Place — Latin American Innovation Rally</div>
+                    <div class="achievement-item lang-es">🤝 Voluntario — Desafío Techo Argentina</div>
+                    <div class="achievement-item lang-en">🤝 Volunteer — Techo Argentina Challenge</div>
+                </div>
+            </div>
+        </section>
 
-<div class="achievement-item lang-es">🥈 2do Puesto - Rally de Innovación Latinoamericano</div>
-<div class="achievement-item lang-en">🥈 2nd Place - Latin American Innovation Rally</div>
+        </main>
 
-<div class="achievement-item lang-es">🚀 Co-Fundador - Nayte Startup</div>
-<div class="achievement-item lang-en">🚀 Co-Founder - Nayte Startup</div>
-
-<div class="achievement-item lang-es">🤝 Voluntario - Techo Argentina</div>
-<div class="achievement-item lang-en">🤝 Volunteer - Techo Argentina</div>
-    </div>
-</div>
+        <footer class="footer-quote">
+            <p class="lang-es">“En caso de duda, esforzate un poco más y seguí esforzándote. Es la única forma de seguir creciendo, tanto personal como profesionalmente.”</p>
+            <p class="lang-en">“When in doubt, push a little harder and then keep pushing. It's the only way to keep growing, both personally and professionally.”</p>
+            <p class="updated lang-es">Última actualización: agosto 2026</p>
+            <p class="updated lang-en">Last updated: August 2026</p>
+        </footer>
     </div>
 
     <script>
-        let isEnglish = false;
+        var isEnglish = false;
 
-        function toggleLanguage() {
-            const body = document.body;
-            const flagContainer = document.getElementById('flagContainer');
-            
-            // Add switching animation
-            flagContainer.classList.add('switching');
-            
-            setTimeout(() => {
-                isEnglish = !isEnglish;
-                
-                if (isEnglish) {
-                    body.classList.add('english');
-                } else {
-                    body.classList.remove('english');
-                }
-                
-                // Remove animation class
-                flagContainer.classList.remove('switching');
-            }, 300);
+        function applyLanguage() {
+            document.body.classList.toggle('english', isEnglish);
+            document.documentElement.lang = isEnglish ? 'en' : 'es';
         }
 
-        // Add smooth scrolling and fade-in animations
-        window.addEventListener('load', function() {
-            const sections = document.querySelectorAll('.section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
+        function toggleLanguage() {
+            var btn = document.getElementById('langBtn');
+            btn.classList.add('switching');
+            setTimeout(function () {
+                isEnglish = !isEnglish;
+                applyLanguage();
+                btn.setAttribute('aria-pressed', String(isEnglish));
+                btn.classList.remove('switching');
+            }, 220);
+        }
+
+        // Abre en inglés si el navegador no está en español / opens in English for non-Spanish browsers
+        (function () {
+            var nav = (navigator.language || 'es').toLowerCase();
+            if (nav.indexOf('es') !== 0) {
+                isEnglish = true;
+                applyLanguage();
+                document.getElementById('langBtn').setAttribute('aria-pressed', 'true');
+            }
+        })();
+
+        // Scroll-reveal suave por sección/tarjeta, respetando prefers-reduced-motion
+        window.addEventListener('load', function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var targets = document.querySelectorAll('.section, .job, .footer-quote');
+
+            if (reduceMotion || !('IntersectionObserver' in window)) {
+                return;
+            }
+
+            targets.forEach(function (el, i) {
+                el.classList.add('reveal');
+                el.style.transitionDelay = Math.min(i * 40, 240) + 'ms';
+            });
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-
-        // Print optimization
-        window.addEventListener('beforeprint', function() {
-            document.body.style.background = 'white';
-            document.querySelector('.container').style.boxShadow = 'none';
-            document.querySelector('.language-toggle').style.display = 'none';
-        });
-
-        window.addEventListener('afterprint', function() {
-            document.body.style.background = 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)';
-            document.querySelector('.container').style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
-            document.querySelector('.language-toggle').style.display = 'flex';
+            targets.forEach(function (el) { observer.observe(el); });
         });
     </script>
 </body>
